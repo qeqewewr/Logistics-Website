@@ -1,0 +1,26 @@
+17:12:02.092 [main] WARN  o.s.aop.framework.CglibAopProxy - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+17:12:02.353 [main] INFO  fxc.repository.JpaMappingTest - ok: Owner
+17:12:02.367 [main] INFO  fxc.repository.JpaMappingTest - ok: Manager
+17:12:02.376 [main] INFO  fxc.repository.JpaMappingTest - ok: Vehicle
+17:12:02.392 [main] INFO  fxc.repository.JpaMappingTest - ok: Location
+17:12:02.395 [main] INFO  fxc.repository.JpaMappingTest - ok: Waybill
+17:12:02.416 [main] INFO  fxc.repository.JpaMappingTest - ok: Administer
+17:12:02.426 [main] INFO  fxc.repository.JpaMappingTest - ok: Good
+17:12:02.446 [main] INFO  fxc.repository.JpaMappingTest - ok: Role
+17:12:02.448 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+17:12:02.448 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unknown column 'user0_.plain_password' in 'field list'
+17:14:01.686 [main] WARN  o.s.aop.framework.CglibAopProxy - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+17:14:01.816 [main] INFO  fxc.repository.JpaMappingTest - ok: Location
+17:14:01.819 [main] INFO  fxc.repository.JpaMappingTest - ok: Vehicle
+17:14:01.821 [main] INFO  fxc.repository.JpaMappingTest - ok: Owner
+17:14:01.824 [main] INFO  fxc.repository.JpaMappingTest - ok: Waybillstatus
+17:14:01.839 [main] INFO  fxc.repository.JpaMappingTest - ok: Warehouse
+17:14:01.852 [main] INFO  fxc.repository.JpaMappingTest - ok: Customer
+17:14:01.853 [main] INFO  fxc.repository.JpaMappingTest - ok: Role
+17:14:01.855 [main] INFO  fxc.repository.JpaMappingTest - ok: Manager
+17:14:01.857 [main] INFO  fxc.repository.JpaMappingTest - ok: Good
+17:14:01.859 [main] INFO  fxc.repository.JpaMappingTest - ok: Waybill
+17:14:01.861 [main] INFO  fxc.repository.JpaMappingTest - ok: Administer
+17:14:01.863 [main] INFO  fxc.repository.JpaMappingTest - ok: Goodsprice
+17:14:01.875 [main] INFO  fxc.repository.JpaMappingTest - ok: Controller
+17:14:01.938 [main] INFO  fxc.repository.JpaMappingTest - ok: User

@@ -1,0 +1,6 @@
+本系统采用java开发，使用maven工具进行项目的管理工作。因此，需要安装maven工具。
+1. 安装maven工具
+2. 创建数据库，导入数据库脚本文件\src\main\resources\sql\mysql\schema.sql
+3. 修改配置文件，配置文件在/src/main/resources/application.properties.将数据库连接地址改为自己机器相应的登录环境。
+4. 点击bin目录下面的jetty.bat文件，运行程序（第一次运行程序，maven会根据项目的pom.xml去maven库下载相对应的jar包，如果显示失败，请关闭重新运行，可能网络连接不稳定，导致下载jar中断）
+5. jetty启动成功后，根据http://localhost:8080/wuliu/admin/login访问后台系统。（jetty服务的默认访问端口8080，可以根据情况修改。），后台登录用户名密码均为：admin

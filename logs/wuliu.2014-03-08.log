@@ -1,0 +1,199 @@
+14:56:41.647 [main] ERROR o.s.web.servlet.DispatcherServlet - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userAdminController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private fxc.service.account.AdminService fxc.web.account.UserAdminController.adminService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:626) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479) ~[spring-context-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:651) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:599) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:665) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:518) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:459) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241) ~[servlet-api-2.5-20081211.jar:na]
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97) ~[run-jetty-run-bootstrap.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private fxc.service.account.AdminService fxc.web.account.UserAdminController.adminService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:270) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:910) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:853) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:768) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:601) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:149) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:102) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1454) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:249) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:910) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:853) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:768) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:558) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 47 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:75) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:327) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:353) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:307) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:271) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:245) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:72) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:180) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.buildTree(PartTree.java:260) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:240) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:71) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:57) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:90) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:162) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:68) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:279) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:147) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:153) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:43) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:142) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 55 common frames omitted
+14:59:29.718 [main] WARN  o.s.aop.framework.CglibAopProxy - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+14:59:29.883 [main] INFO  fxc.repository.JpaMappingTest - ok: Waybill
+14:59:29.886 [main] INFO  fxc.repository.JpaMappingTest - ok: Warehouse
+14:59:29.902 [main] INFO  fxc.repository.JpaMappingTest - ok: Role
+14:59:29.917 [main] INFO  fxc.repository.JpaMappingTest - ok: Customer
+14:59:29.920 [main] INFO  fxc.repository.JpaMappingTest - ok: Administer
+14:59:29.921 [main] INFO  fxc.repository.JpaMappingTest - ok: Owner
+14:59:29.926 [main] INFO  fxc.repository.JpaMappingTest - ok: Good
+14:59:29.928 [main] INFO  fxc.repository.JpaMappingTest - ok: Controller
+14:59:29.930 [main] INFO  fxc.repository.JpaMappingTest - ok: Goodsprice
+14:59:29.932 [main] INFO  fxc.repository.JpaMappingTest - ok: Location
+14:59:29.934 [main] INFO  fxc.repository.JpaMappingTest - ok: Vehicle
+14:59:29.942 [main] INFO  fxc.repository.JpaMappingTest - ok: User
+14:59:29.944 [main] INFO  fxc.repository.JpaMappingTest - ok: Manager
+14:59:29.946 [main] INFO  fxc.repository.JpaMappingTest - ok: Waybillstatus
+15:00:41.458 [main] ERROR o.s.web.servlet.DispatcherServlet - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userAdminController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private fxc.service.account.AdminService fxc.web.account.UserAdminController.adminService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:626) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) ~[spring-context-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479) ~[spring-context-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:651) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:599) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:665) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:518) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:459) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136) ~[spring-webmvc-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241) ~[servlet-api-2.5-20081211.jar:na]
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97) ~[run-jetty-run-bootstrap.jar:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private fxc.service.account.AdminService fxc.web.account.UserAdminController.adminService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:288) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:270) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:910) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:853) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:768) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire method: public void fxc.service.account.AdminService.setAdminDao(fxc.repository.AdminDao); nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:601) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminDao': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:149) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:102) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1454) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:249) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:910) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:853) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:768) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:558) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 47 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property login found for type fxc.entity.Administer
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:75) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:327) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:353) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:307) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:271) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:245) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:72) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:180) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.buildTree(PartTree.java:260) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:240) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:71) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:57) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:90) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:162) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:68) ~[spring-data-jpa-1.3.2.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:279) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:147) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:153) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.getObject(RepositoryFactoryBeanSupport.java:43) ~[spring-data-commons-1.5.1.RELEASE.jar:na]
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:142) ~[spring-beans-3.2.3.RELEASE.jar:3.2.3.RELEASE]
+	... 55 common frames omitted

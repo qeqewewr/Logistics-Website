@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/layouts/">
+	<excludes>
+		<pattern>/static/*</pattern>
+		<pattern>/cxf/*</pattern>
+		<pattern>/api/*</pattern>
+		<pattern>/javasimon/*</pattern>
+		<pattern>/login/*</pattern>
+		<pattern>/login</pattern>
+	    <pattern>/admin/login</pattern>
+	    <pattern>/admin/logout</pattern>
+	</excludes>
+	
+    <decorator name="admin" page="default.jsp">
+		<pattern>/admin/*</pattern>
+	</decorator>
+
+	<decorator name="frontpage" page="FPdefault.jsp">
+		<pattern>/frontpage/*</pattern>
+		<pattern>/story/*</pattern>
+		<pattern>/controllerRelation</pattern>
+		<pattern>/relationManage</pattern>
+		<pattern>/relatedCustomer/*</pattern>
+		<pattern>/config/newscontent/*</pattern>
+		
+	</decorator>
+	
+	<decorator name="frontpage1" page="FPdefault1.jsp">
+		<pattern>/frontpage1/introduce</pattern>
+		<pattern>/frontpage1/news</pattern>
+		<pattern>/frontpage1/contactus</pattern>
+		<pattern>/frontpage1/feedback</pattern>
+	</decorator>
+	
+	
+</decorators>
